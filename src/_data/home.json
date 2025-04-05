@@ -1,6 +1,6 @@
 {
   "title": "Fernfolio",
-  "image": "src/assets/img/fern-in-hand.jpeg",
+  "image": "/src/assets/img/avatar.jpg",
   "image_alt": "Fern in hand",
-  "body": "The super simple portfolio template built with [Eleventy](https://www.11ty.dev/) and [Netlify CMS](https://www.netlifycms.org/)."
+  "body": "Welcome! I'm Dmytro Storozhuk, Chief Technology Officer at iTech4Web and a seasoned Senior Drupal Developer. With over a decade of experience in Drupal development, I specialize in delivering robust, scalable, and efficient digital solutions. Explore my professional journey, projects, and insights."
 }
