@@ -3,7 +3,7 @@ layout: base.njk
 section: home
 ---
 <div class="home-page">
-	<div class="home-page__bg-square"></div>
+{#	<div class="home-page__bg-square"></div>#}
 
   {# Hero #}
   <div class="hero">
@@ -24,15 +24,16 @@ section: home
     </div>
   </div>
 
-  {# Projects #}
+  {# Projects section is hidden
   <div class="list-header">
     <h2 class="list-header__title">Projects</h2>
     <a class="btn btn--outline btn--sm" href="/projects">View All</a>
   </div>
   {% from "macros/projectlist.njk" import projectlist %}
   {{ projectlist(projects = collections.project | reverse) }}
+  #}
 
-  {# Articles #}
+  {# Articles section is hidden
   <div class="list-header">
     <h2 class="list-header__title">Articles</h2>
     <a class="btn btn--outline btn--sm" href="/blog">View All</a>
@@ -43,4 +44,5 @@ section: home
     show_tags = false,
     limit = 3
   ) }}
+  #}
 </div>
