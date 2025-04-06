@@ -156,3 +156,18 @@
   margin-top: 0;
   margin-bottom: 20px;
 }
+
+.gallery-section {
+  margin-top: 60px;
+  padding-top: 40px;
+  border-top: 2px solid var(--color-border);
+
+  :root[data-theme="dark"] & {
+    border-top: 1px solid var(--color-border-dark);
+  }
+}
+
+.gallery-section__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+}

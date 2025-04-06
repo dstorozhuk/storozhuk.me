@@ -1,6 +1,7 @@
 const Turbolinks = require('turbolinks');
 const drawer = require('./drawer');
 const darkMode = require('./dark-mode');
+require('./photoswipe-init');
 
 // Initialize Turbolinks
 Turbolinks.start();

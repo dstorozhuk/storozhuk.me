@@ -54,6 +54,7 @@
     "node": "22.14.0"
   },
   "dependencies": {
-    "@anthropic-ai/claude-code": "^0.2.64"
+    "@anthropic-ai/claude-code": "^0.2.64",
+    "photoswipe": "^5.4.4"
   }
 }

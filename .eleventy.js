@@ -38,6 +38,11 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('./src/favicon.ico');
   eleventyConfig.addPassthroughCopy('./src/admin');
   eleventyConfig.addPassthroughCopy('./src/assets/img');
+  eleventyConfig.addPassthroughCopy({
+    './node_modules/photoswipe/dist/photoswipe.css': './assets/css/photoswipe.css',
+    './node_modules/photoswipe/dist/photoswipe.esm.js': './assets/js/photoswipe.esm.js',
+    './node_modules/photoswipe/dist/photoswipe-lightbox.esm.js': './assets/js/photoswipe-lightbox.esm.js'
+  });
 
   // Allow Turbolinks to work in development mode
   eleventyConfig.setBrowserSyncConfig(browserSyncConfig);
