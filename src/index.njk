@@ -24,6 +24,29 @@ section: home
     </div>
   </div>
 
+  {# Social Links #}
+  <div class="social-links">
+    <h2 class="social-links__title">Learn More about me</h2>
+    <div class="social-links__container">
+      <a href="https://www.linkedin.com/in/dstorozhuk/" target="_blank" rel="noopener noreferrer" class="social-link">
+        {{ "src/assets/img/icon-linkedin.svg" | svg | safe }}
+        <span>LinkedIn</span>
+      </a>
+      <a href="https://github.com/dstorozhuk" target="_blank" rel="noopener noreferrer" class="social-link">
+        {{ "src/assets/img/icon-github.svg" | svg | safe }}
+        <span>GitHub</span>
+      </a>
+      <a href="https://dev.acquia.com/person/community/dmytro-storozhuk" target="_blank" rel="noopener noreferrer" class="social-link">
+{#        {{ "src/assets/img/acquia-cloud.svg" | svg | safe }}#}
+        <span>Acquia Certified</span>
+      </a>
+      <a href="https://www.drupal.org/u/dstorozhuk" target="_blank" rel="noopener noreferrer" class="social-link">
+{#        {{ "src/assets/img/acquia_drupal_cms_0.svg" | svg | safe }}#}
+        <span>Drupal.org</span>
+      </a>
+    </div>
+  </div>
+
   {# Projects section is hidden
   <div class="list-header">
     <h2 class="list-header__title">Projects</h2>
@@ -45,4 +68,12 @@ section: home
     limit = 3
   ) }}
   #}
+
+  {# Contact Form Section #}
+  <div class="contact-section">
+    <h2 class="contact-section__title">Get in touch</h2>
+    <p>If you have any questions or need help with Drupal or WordPress  - don't hesitate to contact with me.</p>
+
+    {% include "partials/form.njk" %}
+  </div>
 </div>

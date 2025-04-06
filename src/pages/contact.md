@@ -8,9 +8,10 @@ metaDescription: This is a sample meta description. If one is not present in
   your page/post's front matter, the default metadata.desciption will be used
   instead.
 subtitle: Contact Subtitle
-eleventyNavigation:
-  key: Contact
-  order: 4
+# Navigation hidden
+# eleventyNavigation:
+#   key: Contact
+#   order: 4
 ---
 
 The contact form on this page uses [Netlify Forms](https://www.netlify.com/docs/form-handling/) to process submissions,

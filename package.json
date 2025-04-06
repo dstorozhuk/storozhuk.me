@@ -49,5 +49,11 @@
     "rimraf": "^3.0.2",
     "sass": "^1.54.3",
     "turbolinks": "^5.2.0"
+  },
+  "volta": {
+    "node": "22.14.0"
+  },
+  "dependencies": {
+    "@anthropic-ai/claude-code": "^0.2.64"
   }
 }
