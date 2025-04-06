@@ -14,11 +14,11 @@
   padding-bottom: 75%; /* 4:3 aspect ratio */
   background-color: var(--color-bg-accent);
   transition: transform 0.3s ease;
-  
+
   :root[data-theme="dark"] & {
     background-color: var(--color-bg-accent-dark);
   }
-  
+
   &:hover {
     transform: translateY(-5px);
   }

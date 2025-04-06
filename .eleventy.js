@@ -7,6 +7,8 @@ const markdownFilter = require('./src/_11ty/filters/markdown-filter');
 const svgFilter = require('./src/_11ty/filters/svg-filter');
 const browserSyncConfig = require('./src/_11ty/utils/browser-sync-config');
 const { readableDateFilter, machineDateFilter } = require('./src/_11ty/filters/date-filters');
+const imageDimensionsFilter = require('./src/_11ty/filters/image-dimensions-filter');
+const stringFilters = require('./src/_11ty/filters/string-filters');
 
 module.exports = function (eleventyConfig) {
   // Plugins
@@ -18,6 +20,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter('readableDate', readableDateFilter);
   eleventyConfig.addFilter('machineDate', machineDateFilter);
   eleventyConfig.addFilter('svg', svgFilter);
+  eleventyConfig.addFilter('imageDimension', imageDimensionsFilter);
+  eleventyConfig.addFilter('filename', stringFilters.filename);
+  eleventyConfig.addFilter('split', stringFilters.split);
 
   // Shortcodes
   eleventyConfig.addNunjucksAsyncShortcode('image', imageShortcode);

@@ -26,16 +26,6 @@
   <script src="https://cdn.jsdelivr.net/npm/photoswipe@5.3.8/dist/umd/photoswipe.umd.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/photoswipe@5.3.8/dist/umd/photoswipe-lightbox.umd.min.js"></script>
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const lightbox = new PhotoSwipeLightbox({
-        gallery: '.gallery',
-        children: 'a',
-        pswpModule: PhotoSwipe
-      });
-      lightbox.init();
-    });
-  </script>
-  <script>
     // Initialize theme
     // Must run before page rendering to prevent flash
     const themeConfig = document.documentElement.dataset;
